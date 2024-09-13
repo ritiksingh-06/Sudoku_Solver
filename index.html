@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+
+    
+    <h1>Sudoku Solver</h1>
+    <div id="sudoku-grid">
+        <!-- 9x9 grid -->
+        <div class="row row1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row row3">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row row4">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row row6">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row row7">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+        <div class="row row9">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+            <input type="text" class="cell" maxlength="1">
+        </div>
+    </div>
+    <button onclick="solveSudoku()">Solve</button>
+    <button onclick="clearGrid()">Clear</button>
+</body>
+</html>
